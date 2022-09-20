@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Postal</title>
+    <link rel="stylesheet" href="codePostal.css" />
+  </head>
+  <body>
+    <!-- Recherche par code postal -->
+    <form>
+      <fieldset id="rechercheParCP">
+        <legend>Recherche par code Postal</legend>
+        <div>
+          <input type="text" id="codePostal" placeholder="Code Postal" />
+          <button type="button" id="searchButtonCP">Rechercher</button>
+        </div>
+        <div>
+          <select id="ville" title="Sélection de la ville"></select>
+        </div>
+      </fieldset>
+    </form>
+    <!-- Recherche par nom de ville -->
+    <form>
+      <fieldset id="rechercheParNom">
+        <legend>Recherche par nom de ville</legend>
+        <div>
+          <input
+            type="text"
+            list="browsers"
+            id="nomVille"
+            placeholder="Nom de la ville ?"
+          />
+          <datalist id="browsers"> </datalist>
+          <button type="button" id="searchButtonName">Afficher</button>
+        </div>
+        <div id="erreur"></div>
+        <div id="result">Code Postal :</div>
+      </fieldset>
+    </form>
+
+    <script src="codePostal.js"></script>
+  </body>
+</html>
