@@ -25,18 +25,26 @@
     <form>
       <fieldset id="rechercheParNom">
         <legend>Recherche par nom de ville</legend>
-        <div>
+        <div class="test">
           <input
-            type="text"
+            type="search"
             list="browsers"
             id="nomVille"
             placeholder="Nom de la ville ?"
           />
-          <datalist id="browsers"> </datalist>
-          <button type="button" id="searchButtonName">Afficher</button>
         </div>
+
+        <div id="select" class="dropdown"></div>
         <div id="erreur"></div>
-        <div id="result">Code Postal :</div>
+        <label for="townResult">Ville :</label>
+        <input title="townResult" type="text" id="townResult" disabled />
+        <label for="postalCodeResult">Code Postal :</label>
+        <input
+          title="postalCodeResult"
+          type="text"
+          id="postalCodeResult"
+          disabled
+        />
       </fieldset>
     </form>
 

@@ -1,0 +1,37 @@
+#select {
+  display: none;
+}
+
+#erreur {
+  color: red;
+  font-weight: bold;
+}
+
+.dropdown {
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  /* top: 100%; */
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.dropdown ul {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown li {
+  cursor: pointer;
+  list-style-type: none;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown li:hover {
+  background-color: #d6d3d6;
+}
